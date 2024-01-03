@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Black.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Black.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Bold.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Bold.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-ExtraBold.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-ExtraBold.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Light.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Light.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Regular.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Regular.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Medium.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Medium.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rounded Mplus 1c";
+  src: url("./fonts/RoundedMplus1c-Thin.woff2") format("woff2"),
+    url("./fonts/RoundedMplus1c-Thin.woff") format("woff"),
+    url("./fonts/RoundedMplus1c-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -8,7 +78,7 @@ body {
 }
 
 #calculator {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Rounded Mplus 1c", sans-serif;
   background-color: hsl(0, 0%, 15%);
   border-radius: 15px;
   max-width: 500px;
@@ -61,7 +131,7 @@ button {
   font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Rounded Mplus 1c", sans-serif;
 }
 
 button:hover {
