@@ -15,14 +15,33 @@ body {
   overflow: hidden;
 }
 
-#display {
+.output {
   width: 100%;
-  padding: 27px;
-  font-size: 5rem;
+  padding: 0px;
+  font-size: 4rem;
   text-align: left;
   border: none;
   background-color: hsl(0, 0%, 20%);
   color: white;
+  margin: 0;
+  min-height: 130px;
+}
+
+.operand {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous {
+  color: hsl(0, 0%, 60%);
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.current {
+  float: right;
+  margin-right: 20px;
 }
 
 #keys {
