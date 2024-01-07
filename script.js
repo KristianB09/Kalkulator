@@ -94,6 +94,8 @@ const operationButtons = document.querySelectorAll("[data-operation]");
 const equalsButton = document.querySelector("[data-equals]");
 const clearButton = document.querySelector("[data-all-clear]");
 const deleteButton = document.querySelector("[data-delete]");
+const sqrtButton = document.querySelector("[data-sqrt]");
+const percentButton = document.querySelector("[data-percent]");
 const previousOperandText = document.querySelector("[data-previous-operand]");
 const currentOperandText = document.querySelector("[data-current-operand]");
 

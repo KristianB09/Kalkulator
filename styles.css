@@ -94,7 +94,8 @@ body {
   background-color: hsl(0, 0%, 20%);
   color: white;
   margin: 0;
-  min-height: 130px;
+  min-height: 8.125rem;
+  overflow-y: hidden;
 }
 
 .operand {
@@ -105,26 +106,28 @@ body {
 .previous {
   color: hsl(0, 0%, 60%);
   font-size: 2rem;
-  margin-left: 20px;
-  margin-top: 20px;
+  height: 2rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .current {
   float: right;
-  margin-right: 20px;
+  margin-right: 1.25rem;
+  height: 4rem;
 }
 
 #keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 25px;
+  gap: 0.625rem;
+  padding: 1.563rem;
 }
 
 button {
-  width: 100px;
-  height: 100px;
-  border-radius: 500px;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 31.25rem;
   border: none;
   background-color: hsl(0, 0%, 30%);
   color: white;
@@ -156,4 +159,47 @@ button:active {
 
 .deleteBtn {
   font-size: 2.2rem;
+}
+
+.top-row {
+  background-color: hsl(0, 0%, 65%);
+  color: hsl(0, 0%, 10%);
+}
+
+.top-row:hover {
+  background-color: hsl(0, 0%, 75%);
+}
+
+.top-row:active {
+  background-color: hsl(0, 0%, 85%);
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 395px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 365px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 330px) {
+  html {
+    font-size: 10px;
+  }
 }
