@@ -135,6 +135,9 @@ button {
   font-weight: bold;
   cursor: pointer;
   font-family: "Rounded Mplus 1c", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
