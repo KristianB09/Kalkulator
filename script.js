@@ -56,6 +56,20 @@ class Calculator {
     this.previousOperand = "";
   }
 
+  negative() {
+    if (this.currentOperand === null) return;
+    const x = Math.sign(parseFloat(this.currentOperand));
+    const stringOperand = this.currentOperand.toString();
+    if (x === 1) {
+      this.currentOperand = "-" + stringOperand;
+    } else if (x === -1) {
+      const substring = stringOperand.substring(1);
+      this.currentOperand = substring;
+    } else {
+      return;
+    }
+  }
+
   squareRoot() {
     const sqrtValue = parseFloat(this.currentOperand);
     if (sqrtValue === "" || sqrtValue <= 0) return;
@@ -102,7 +116,7 @@ const equalsButton = document.querySelector("[data-equals]");
 const clearButton = document.querySelector("[data-all-clear]");
 const deleteButton = document.querySelector("[data-delete]");
 const sqrtButton = document.querySelector("[data-sqrt]");
-const percentButton = document.querySelector("[data-percent]");
+const negativeButton = document.querySelector("[data-negative]");
 const previousOperandText = document.querySelector("[data-previous-operand]");
 const currentOperandText = document.querySelector("[data-current-operand]");
 
@@ -139,5 +153,10 @@ deleteButton.addEventListener("click", (button) => {
 
 sqrtButton.addEventListener("click", (button) => {
   calculator.squareRoot();
+  calculator.updateOutput();
+});
+
+negativeButton.addEventListener("click", (button) => {
+  calculator.negative();
   calculator.updateOutput();
 });
