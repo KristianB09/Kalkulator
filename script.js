@@ -56,6 +56,14 @@ class Calculator {
     this.previousOperand = "";
   }
 
+  squareRoot() {
+    const sqrtValue = parseFloat(this.currentOperand);
+    if (sqrtValue === "" || sqrtValue <= 0) return;
+    const sqrtResult = Math.sqrt(sqrtValue);
+    this.previousOperand = this.currentOperand;
+    this.currentOperand = sqrtResult;
+  }
+
   getOutputNumber(number) {
     const stringNumber = number.toString();
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
@@ -127,5 +135,10 @@ clearButton.addEventListener("click", (button) => {
 
 deleteButton.addEventListener("click", (button) => {
   calculator.delete();
+  calculator.updateOutput();
+});
+
+sqrtButton.addEventListener("click", (button) => {
+  calculator.squareRoot();
   calculator.updateOutput();
 });
