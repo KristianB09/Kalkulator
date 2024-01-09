@@ -60,7 +60,6 @@ class Calculator {
     const sqrtValue = parseFloat(this.currentOperand);
     if (sqrtValue === "" || sqrtValue <= 0) return;
     const sqrtResult = Math.sqrt(sqrtValue);
-    this.previousOperand = this.currentOperand;
     this.currentOperand = sqrtResult;
   }
 
