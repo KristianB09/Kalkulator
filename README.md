@@ -1,0 +1,3 @@
+<h1>Kalkulator nyttårsprosjekt</h1>
+<p>Dette var et kortvarig prosjekt der vi skulle lage et program/webside som vi bestemte selv, jeg gikk da for en kalkulator da jeg ikke hadde laget en før og det virket som en god utfordring. I tillegg ville jeg lære meg noen nye konsepter, så "this" keyword og class constructors er brukt for å bygge logikken til denne kalkulatoren.</p>
+<p>Design var ikke i fokus på denne siden, så den er ganske enkel. For et mer designfokusert prosjekt, gå til sushisiden Oishii, der jeg var ansvarlig for hjemmesiden: <a href="https://github.com/camillab09/Prosjekt">github link</a></p>
