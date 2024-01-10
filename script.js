@@ -37,15 +37,19 @@ class Calculator {
     if (isNaN(prev) || isNaN(current)) return;
     switch (this.operation) {
       case "\uFF0B":
+      case "+":
         computation = prev + current;
         break;
       case "\uFF0D":
+      case "-":
         computation = prev - current;
         break;
       case "\uFF0A":
+      case "*":
         computation = prev * current;
         break;
       case "\uFF0F":
+      case "/":
         computation = prev / current;
         break;
       default:
@@ -159,4 +163,31 @@ sqrtButton.addEventListener("click", (button) => {
 negativeButton.addEventListener("click", (button) => {
   calculator.negative();
   calculator.updateOutput();
+});
+
+document.addEventListener("keydown", function (event) {
+  const key = event.key;
+  if (!isNaN(parseFloat(key))) {
+    calculator.appendNumber(key);
+    calculator.updateOutput();
+  } else {
+    switch (key) {
+      case "+":
+      case "-":
+      case "*":
+      case "/":
+        calculator.chooseOperation(key);
+        calculator.updateOutput();
+        break;
+      /*case "Enter":
+        calculator.compute();
+        break;*/
+      case "Backspace":
+        deleteButton.click();
+        break;
+      case "Escape":
+        clearButton.click();
+        break;
+    }
+  }
 });
